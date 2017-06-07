@@ -1,0 +1,6 @@
+function ke=dlb_ke(y)
+[m,n]=size(y);
+for i=1:1:m
+    result(i,:)=dtw_distance(y(i,:),y(1,:));
+end
+ke=result;

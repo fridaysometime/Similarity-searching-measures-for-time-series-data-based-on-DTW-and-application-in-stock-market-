@@ -1,0 +1,8 @@
+function x=dlbkim(y)
+% y=rand(3,6);
+[m,n]=size(y);
+for i=2:1:m
+    result(i,:)=lb_kim(y(i,:),y(1,:));
+end
+x=find(result;
+end

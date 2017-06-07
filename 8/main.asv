@@ -1,0 +1,35 @@
+n1=xlsread('上证综指1.xls','total2009');
+n2=xlsread('上证综指1.xls','total2008');
+n3=xlsread('上证综指1.xls','total2009');
+n=[n1;n2;n3];
+[a,b]=size(n);
+% plot(n)
+% title('2007年至2009年上证综指原始折现图')
+% grid on
+
+% out=d_noraml(a,b,n);
+y=divided(a,b,n);
+dorgin=o_dtw(y);
+
+% [com1,e]=compare(dorgin,y);
+
+% [dyi,m1]=dlbyi(y,e);
+% [dkim,m2]=dlbkim(y,e);
+% [dke,m3]=dlb_ke(y,e);
+% 
+% dis=early_dtw(y,e);
+
+seg=sevs(y);
+dseg=o_dtw(seg);
+[m1,n1]=size(y);
+[m1,n1]=size(y);
+
+k=reshape(y',1,73*10);
+l=reshape(seg',1,73*4);
+subplot(2,1,1);
+plot(k)
+subplot(2,1,2);
+plot(l)
+
+ 
+

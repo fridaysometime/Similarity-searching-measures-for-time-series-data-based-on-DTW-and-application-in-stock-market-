@@ -1,0 +1,6 @@
+function y=sevs(a)
+% a=xlsread('иож╓вшж╦.xls','total2009');
+[m,n]=size(a);
+y=reshape(a',1,m*n);
+f=sevs_extra(y);
+end

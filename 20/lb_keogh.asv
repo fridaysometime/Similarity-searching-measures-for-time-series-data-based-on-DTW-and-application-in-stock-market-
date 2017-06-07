@@ -1,0 +1,17 @@
+function t=lb_keogh(a,b)
+b=[1,2,3];
+a=[4,5,6];
+u=max(b);
+l=min(b);
+for i=1:length(a)
+     if a(:,i)>u
+           d(i,:)=(a(:,i)-u)*(a(:,i)-u);
+     elseif a(:,i)<l
+           g(i,:)=(a(:,i)-l)*(a(:,i)-l);
+     else
+         out=0;
+     end  
+
+end
+
+end

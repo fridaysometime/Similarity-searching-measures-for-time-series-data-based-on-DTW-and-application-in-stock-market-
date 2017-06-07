@@ -1,0 +1,22 @@
+function y=divided(n)
+% n=rand(244,4)
+% [a,b]=size(n)
+% n=reshape(n',1,a*b);
+l=length(n);
+z=l/7;
+d=rem(l,10);
+if d==0
+    a2=n;
+else
+  e=zeros(1,7-d);
+    a2=[n,e];
+end
+for i=1:1:z+1
+    t(i,:)=a2((i-1)*7+1:7*i);
+end
+m=size(t);
+y=t(1:(m(1,1)-1),:);
+end
+
+
+

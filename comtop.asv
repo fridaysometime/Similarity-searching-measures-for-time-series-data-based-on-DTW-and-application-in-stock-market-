@@ -1,0 +1,4 @@
+function u=comtop(y,t)
+[m,n]=size(y);
+for i=1:1:n
+    u(i,:)=dtw_distance(y(i,:),y(1,:));
